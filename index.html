@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Library Project</title>
 </head>
 <body>
+    <h1 class="header">Nina's Library</h1>
+        <div class="addBtn">
+            <button class="addBook">Add Book</button>
+        </div>
+        <div class="popUp">
+            <form id="form" action="/script.js">
+                <span class="close">&times;</span>
+                <ledgend>New Book</ledgend>
+                <div id='textInput'> 
+                    <p><input type='text' id='title' name='title' placeholder='Title'></p>
+                    <p><input type='text' id='author' name='author' placeholder='Author'></p>
+                    <p><input type='text' id='pages' name='pages' placeholder='Pages'></p>
+                </div>
+                <div id='checkBox'>
+                    <p><label >Read: </label><input type='checkbox' id='read' name='read' value='yes'></p>
+                </div>
+                <button type='submit' form='form' id='addBtn'>Add</button>
+
+            </form>
+
+        </div>
+        
+        <h2>Books Read:</h2>
+        <div class="lib-container">
+
+
+
+        </div>
+
+        <h2>Wish List:</h2>
+
+        <div class="wish-container">
+            
+
+        </div>
     
+
+    <script src="Script.js"></script>
 </body>
 </html>
