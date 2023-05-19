@@ -10,6 +10,6 @@ h2{
     text-align: center;
 }
 
-.lib-container, .wish-container{
+#lib-container, #wish-container{
     border: 2px solid black;
 }
