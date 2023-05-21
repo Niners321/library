@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js" defer></script>
     <title>Library Project</title>
 </head>
 <body>
+
     <h1 class="header">Nina's Library</h1>
-        <div id="newBtn">
-            <button id="newBook">Add Book</button>
+        <div id="newBook-container">
+            <button id="newBook" class="newBook">Add Book</button>
         </div>
         <div id="popUp">
             <form id="form" action="/script.js">
-                <span id="close">&times;</span>
-                <ledgend>New Book</ledgend>
+                <span id="close" class="close">&times;</span>
+                <legend>New Book</legend>
                 <div id='textInput'> 
                     <p><input type='text' id='title' name='title' placeholder='Title'></p>
                     <p><input type='text' id='author' name='author' placeholder='Author'></p>
@@ -40,14 +42,7 @@
 
         </div>
 
-        <h2>Wish List:</h2>
-
-        <div id="wish-container">
-            
-
-        </div>
     
 
-    <script src="Script.js"></script>
 </body>
 </html>
