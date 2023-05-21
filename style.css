@@ -10,4 +10,28 @@
 h2{
     text-align: center;
 }
+/*add book button styling */
+#newBook-container{
+    display: flex;
+    justify-content: center;
+}
 
+#newBook{
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: .9rem;
+}
+
+#newBook:hover{
+    font-size: 1rem;
+}
+
+
+.popUp{
+    border: 1px solid black;
+    display: none;
+}
+
+.active{
+    display: block;
+}

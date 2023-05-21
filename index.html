@@ -17,10 +17,12 @@
         <div id="newBook-container">
             <button id="newBook" class="newBook">Add Book</button>
         </div>
-        <div id="popUp">
-            <form id="form" action="/script.js">
-                <span id="close" class="close">&times;</span>
-                <legend>New Book</legend>
+        <div id="popUp" class="popUp">
+            <form id="form" class="form">
+                <div id="form-header">
+                    <button id="close" class="close">Close</button>
+                    <legend>New Book</legend>
+                </div>
                 <div id='textInput'> 
                     <p><input type='text' id='title' name='title' placeholder='Title'></p>
                     <p><input type='text' id='author' name='author' placeholder='Author'></p>
