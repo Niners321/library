@@ -52,19 +52,41 @@ class Book {
 };
 
 // Adds book to library
-bookForm.addEventListener('submit', (e) => {
+addBook.addEventListener('submit', (e) => {
     popUp.classList.remove('active');
     e.preventDefault();
     const book = new Book(title.value, author.value, pages.value, read.checked);
     myLibrary.push(book);
-    pringBooks();
+    clearInputs();
+    printBooks();
 });
+
+//removes book
+function removeBook() {
+    const removeBtn = document.querySelectorAll('.remove-btn');
+    removeBtn.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            myLibrary.splice(btn.getAttribute('data'), 1);
+            printBooks();
+        });
+        
+    });
+}
 
 function printBooks() {
     library.textContent = '';
     myLibrary.forEach((book, index) => {
         addBookToLibrary(book, index);
     });
+    removeBook();
+}
+
+// Clears the form inputs
+function clearInputs() {
+    title.value = '';
+    author.value = '';
+    pages.value = '';
+    read.checked = false;
 }
 
 function addBookToLibrary(book, index){

@@ -36,6 +36,10 @@ h2{
     width: 200px;
 }
 
+#close:hover, #addBtn:hover{
+    font-size: 1rem;
+}
+
 #form-header{
     display: flex;
     flex-direction: column;
@@ -50,7 +54,7 @@ legend{
 }
 
 #close{
-    width: 25%;
+    width: auto;
 }
 
 #textInput > p{
