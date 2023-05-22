@@ -1,10 +1,13 @@
 *{
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(253, 235, 238);
+    background-color: #f2e0eb;
 }
 
 .header{
-    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
 }
 
 h2{
@@ -30,8 +33,74 @@ h2{
 .popUp{
     border: 1px solid black;
     display: none;
+    width: 200px;
+}
+
+#form-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+}
+
+legend{
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+#close{
+    width: 25%;
+}
+
+#textInput > p{
+    margin: 5px;
+}
+
+#checkBox > p{
+    margin: 5px;
+}
+
+#addBtn-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .active{
     display: block;
 }
+
+.card{
+    border: 1px solid black;
+    width: 25%;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #e0f2e7;
+}
+
+.card > p, .remove-btn{
+    background-color: #e0f2e7; 
+}
+
+.book-title{
+    font-weight: bold;
+    text-align: center;
+}
+
+.book-author{
+    font-style: italic;
+    text-align: center;
+    font-size: .9rem;
+}
+
+#lib-container{
+    display: flex;
+    justify-content: center;
+    width: 100%
+
+}
+
